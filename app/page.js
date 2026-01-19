@@ -1,9 +1,11 @@
-import Hero from "./pages/Hero";
+import Accueil from "./accueil/page";
+import Product from "./accueil/Product";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Accueil />
+      <Product />
     </main>
   );
 }

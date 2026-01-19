@@ -19,12 +19,29 @@ body {
   --orange: #ff6b35;
 }
 
-.titleh1 {
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 100px;
+}
+
+.titleh1,
+.titleh2,
+.titleh1 div div,
+.titleh2 div div {
   font-family: "Anton", sans-serif;
-  font-size: 150px;
-  line-height: 85%;
-  text-align: center;
   text-transform: uppercase;
+  line-height: 85%;
+}
+
+.titleh1 {
+  font-size: 150px;
+  text-align: center;
+}
+
+.titleh2 {
+  font-size: 100px;
 }
 
 .hero-section {
@@ -34,13 +51,15 @@ body {
 }
 
 .hero-section > div {
-  padding-top: 100px;
+  padding-top: 70px;
   border-block: 2px solid var(--noir);
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -70,4 +89,132 @@ nav {
   text-transform: uppercase;
   border-radius: 30px;
   padding: 15px 40px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--background);
+  text-transform: uppercase;
+  border-radius: 1px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fraise {
+  left: 10%;
+  width: 100px;
+  height: auto;
+}
+
+.fraise-blur {
+  right: 20%;
+  top: 30%;
+  width: 150px;
+  height: auto;
+}
+
+.choco {
+  right: 10%;
+  top: 5%;
+  width: 120px;
+  height: auto;
+}
+
+.choco-blur {
+  left: 35%;
+  bottom: 35%;
+  width: 100px;
+  height: auto;
+}
+
+.crepe-choco {
+  left: 5%;
+  bottom: -15%;
+  width: 550px;
+  height: auto;
+}
+
+.crepe-cara {
+  bottom: -10%;
+}
+
+.crepe {
+  right: 5%;
+  bottom: -15%;
+  width: 550px;
+  height: auto;
+}
+
+/* Card */
+.card-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 75px;
+  margin-top: 150px;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
+  margin-bottom: -100px;
+}
+
+.card {
+  background: var(--noir);
+  width: fit-content;
+  color: var(--background);
+  border-radius: 33px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  color: var(--background);
+}
+
+.card h3 {
+  font-family: "anton", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--background);
+}
+
+.price {
+  font-family: "anton", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.label {
+  font-family: "anton", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--background);
+  position: relative;
+  width: fit-content;
+  padding-inline: 15px;
 }
