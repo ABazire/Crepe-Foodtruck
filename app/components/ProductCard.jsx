@@ -4,7 +4,6 @@ import SecondaryButton from "./SecondaryButton";
 import Crepe from "../../public/images/crepe-product.png";
 import Image from "next/image";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 function ProductCard() {
   const cardData = [

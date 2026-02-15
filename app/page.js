@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main>
       <Accueil />
-      <Product />
     </main>
   );
 }
