@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Container from "../components/Container";
+import Container from "../../components/Container";
 import Image from "next/image";
-import Foodtruck from "../../public/images/foodtruck.png";
+import Foodtruck from "../../../public/images/foodtruck.png";
 
 function About() {
   return (

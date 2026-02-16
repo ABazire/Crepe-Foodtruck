@@ -2,9 +2,9 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import SecondaryTitle from "../components/SecondaryTitle";
-import Container from "../components/Container";
-import ProductCard from "../components/ProductCard";
+import SecondaryTitle from "../../components/SecondaryTitle";
+import Container from "../../components/Container";
+import ProductCard from "../../components/ProductCard";
 
 function Product() {
   return (

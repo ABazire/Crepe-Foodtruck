@@ -25,6 +25,33 @@ body {
   flex-direction: column;
 }
 
+nav {
+  display: flex;
+  max-height: 10vh;
+  padding-inline: 100px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul li,
+nav ul li a {
+  list-style: none;
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 .titleh1,
 .titleh2,
 .titleh1 div div,
@@ -41,6 +68,7 @@ body {
 
 .titleh2 {
   font-size: 100px;
+  font-weight: 400;
 }
 
 .hero-section {
@@ -102,6 +130,7 @@ nav {
   border-radius: 1px;
   padding: 5px 10px;
   cursor: pointer;
+  font-weight: 400;
 }
 
 .absolute {
@@ -198,6 +227,7 @@ nav {
   font-size: 32px;
   text-transform: uppercase;
   color: var(--background);
+  font-weight: 400;
 }
 
 .price {
@@ -244,6 +274,7 @@ nav {
 .about h2,
 .about p {
   color: var(--background);
+  font-weight: 400;
 }
 
 .about h2 {
@@ -264,7 +295,7 @@ nav {
 .about-stats {
   display: flex;
   gap: 50px;
-  margin-block: 50px;
+  margin-block: 10px;
 }
 
 .about-stats div {
@@ -273,4 +304,58 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+/* Testimony */
+
+.testimony-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimony-card {
+  background-color: var(--orange);
+  padding: 40px 30px;
+  border-radius: 25px;
+  display: flex;
+  gap: 25px;
+}
+
+.testimony-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.testimony-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.testimony-card div p,
+.testimony-card div span {
+  color: var(--background);
+}
+
+.testimony-card div p {
+  font-family: "Anton", sans-serif;
+  font-size: 22px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer p {
+  color: var(--background);
+}
+
+footer p:last-child {
+  color: var(--orange);
 }

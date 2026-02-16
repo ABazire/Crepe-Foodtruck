@@ -4,13 +4,15 @@ import React, { useEffect, useRef } from "react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-const SecondaryTitle = ({ children }) => {
+const SecondaryTitle = ({ children, color }) => {
   const titleRef = useRef(null);
 
   useEffect(() => {
     const split = new SplitText(titleRef.current, {
       type: "lines,words,chars",
     });
+
+    gsap.set(split.chars, { color: color || "var(--noir)" });
 
     gsap.from(split.chars, {
       opacity: 0,

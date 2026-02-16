@@ -1,17 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import PrimaryButton from "../components/PrimaryButton";
-import TitleH1 from "../components/TitleH1";
+import PrimaryButton from "../../components/PrimaryButton";
+import TitleH1 from "../../components/TitleH1";
 
 // images
-import fraise from "../../public/images/fraise.png";
-import fraiseblur from "../../public/images/fraise-blur.png";
-import choco from "../../public/images/choco.png";
-import chocoblur from "../../public/images/choco-blur.png";
-import crepechoco from "../../public/images/crepe-choco.png";
-import crepecara from "../../public/images/crepe-cara.png";
-import crepe from "../../public/images/crepe.png";
+import fraise from "../../../public/images/fraise.png";
+import fraiseblur from "../../../public/images/fraise-blur.png";
+import choco from "../../../public/images/choco.png";
+import chocoblur from "../../../public/images/choco-blur.png";
+import crepechoco from "../../../public/images/crepe-choco.png";
+import crepecara from "../../../public/images/crepe-cara.png";
+import crepe from "../../../public/images/crepe.png";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -64,7 +64,6 @@ export default function Hero() {
   return (
     <>
       <section className="hero-section">
-        <nav></nav>
         <div>
           <Image
             ref={fraiseRef}
