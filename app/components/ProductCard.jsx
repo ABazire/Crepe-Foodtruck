@@ -7,37 +7,6 @@ import gsap from "gsap";
 import { products } from "@/app/data/products";
 
 function ProductCard() {
-  // const cardData = [
-  //   {
-  //     image: Crepe,
-  //     label: "Salée",
-  //     title: "La Normande",
-  //     description: "Oeuf, Jambon, Creme, Camembert, Pommes, Noix",
-  //     price: "17,60€",
-  //   },
-  //   {
-  //     image: Crepe,
-  //     label: "Salée",
-  //     title: "La Normande",
-  //     description: "Oeuf, Jambon, Creme, Camembert, Pommes, Noix",
-  //     price: "17,60€",
-  //   },
-  //   {
-  //     image: Crepe,
-  //     label: "Salée",
-  //     title: "La Normande",
-  //     description: "Oeuf, Jambon, Creme, Camembert, Pommes, Noix",
-  //     price: "17,60€",
-  //   },
-  //   {
-  //     image: Crepe,
-  //     label: "Salée",
-  //     title: "La Normande",
-  //     description: "Oeuf, Jambon, Creme, Camembert, Pommes, Noix",
-  //     price: "17,60€",
-  //   },
-  // ];
-
   const cardsRef = useRef([]);
 
   useEffect(() => {
@@ -68,7 +37,7 @@ function ProductCard() {
             <Image src={card.image} alt={card.title} width={150} height={150} />
             <LabelCustom>{card.label}</LabelCustom>
             <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            <p>{card.abstract}</p>
             <div>
               <span className="price">{card.price}</span>
               <SecondaryButton href={`/produits/${card.slug}`}>

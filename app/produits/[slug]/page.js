@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { products, getProductBySlug } from "@/app/data/products";
+import Container from "@/app/components/Container";
+import ProductItem from "@/app/components/ProductItem";
 
 export async function generateStaticParams() {
   return products.map((product) => ({
@@ -31,7 +33,9 @@ export default async function ProductPage({ params }) {
 
   return (
     <>
-      <h1>Il y a bien un produit</h1>
+      <Container>
+        <ProductItem product={product} />
+      </Container>
     </>
   );
 }

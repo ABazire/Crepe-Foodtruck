@@ -359,3 +359,77 @@ footer p {
 footer p:last-child {
   color: var(--orange);
 }
+
+/* Products */
+.product-item {
+  display: flex;
+  background-color: var(--noir);
+  border-radius: 33px;
+  padding: 50px 100px;
+  gap: 100px;
+  align-items: center;
+}
+
+.product-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-item > div > div {
+  display: flex;
+  gap: 5px;
+}
+
+.product-item div h3 {
+  font-family: "anton", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--background);
+  font-weight: 400;
+}
+
+.product-item div p {
+  color: var(--background);
+  font-weight: lighter;
+}
+
+.price {
+  font-size: 40px;
+}
+
+.quantity {
+  color: var(--orange);
+}
+
+.quantity-ctn {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border: 2px solid var(--orange);
+}
+
+.quantity-ctn button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--background);
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.command-ctn {
+  display: flex;
+  gap: 30px !important;
+  align-items: center;
+}
+
+.command-ctn > button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--background);
+  padding-inline: 18px;
+  font-size: 18px;
+  height: 45px;
+  cursor: pointer;
+}
