@@ -1,5 +1,4 @@
-import Accueil from "./pages/accueil/page";
-import Product from "./pages/accueil/Product";
+import Accueil from "./sections/accueil/Accueil";
 
 export default function Home() {
   return (
