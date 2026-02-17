@@ -3,8 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
+import { useCart } from "../context/CartContext";
 
 function Header() {
+  const { cartCount, setIsCartOpen } = useCart();
+
   return (
     <nav>
       <a href="/">
@@ -22,7 +25,10 @@ function Header() {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="#panier">Panier</a>
+          <button className="cart-button" onClick={() => setIsCartOpen(true)}>
+            Panier
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </button>
         </li>
       </ul>
     </nav>

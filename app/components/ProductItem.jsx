@@ -3,8 +3,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import LabelCustom from "./LabelCustom";
+import { useCart } from "../context/CartContext";
 
 function ProductItem({ product }) {
+  const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const totalPrice =
     quantity * parseFloat(product.price.replace("€", "").replace(",", "."));
@@ -33,7 +35,7 @@ function ProductItem({ product }) {
             <span className="quantity">{quantity}</span>
             <button onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
-          <button>Ajouter au panier</button>
+          <button onClick={() => addToCart(product, quantity)}>Ajouter au panier</button>
         </div>
         <p>{product.description}</p>
       </div>
